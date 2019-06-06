@@ -1,0 +1,12 @@
+{
+  "name": "voting-demo",
+  "version": "1.1.1",
+  "dependencies": {
+    "@abai/proxy": "^5.0.0",
+    "compression": "^1.7.4",
+    "express": "^4.16.4"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
