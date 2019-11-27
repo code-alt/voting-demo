@@ -141,16 +141,16 @@
   <body>
     <div id="content-container">
       <div id="content-container-center">
-        <h3>{{name}}!</h3>
+        <h3>Hi!</h3>
         <form id="choice" name='form' method="POST" action="">
-          <button id="optionA" type="submit" name="option" class="optionA" value="optionA">{{optionA}}</button>
-          <button id="optionB" type="submit" name="option" class="optionB" value="optionB">{{optionB}}</button>
+          <button id="optionA" type="submit" name="option" class="optionA" value="optionA">optionA</button>
+          <button id="optionB" type="submit" name="option" class="optionB" value="optionB">optionB</button>
         </form>
         <div id="tip">
           (Tip: you can change your vote)
         </div>
         <div id="hostname">
-          Vote processed by {{hostname}}
+          Vote processed by me
         </div>
       </div>
     </div>
@@ -160,12 +160,12 @@
       if(location.hash != "#admin") {
         if($.cookie("vote") == "optionA"){
           $(".optionA").prop('disabled', true);
-          $(".optionA").html('{{optionA}} <i class="fa fa-check-circle"></i>');
+          $(".optionA").html('optionA <i class="fa fa-check-circle"></i>');
           $(".optionB").css('opacity','0.5');
         }
         if($.cookie("vote") == "optionB"){
           $(".optionB").prop('disabled', true);
-          $(".optionB").html('{{optionB}} <i class="fa fa-check-circle"></i>');
+          $(".optionB").html('optionB <i class="fa fa-check-circle"></i>');
           $(".optionA").css('opacity','0.5');
         }
       }
