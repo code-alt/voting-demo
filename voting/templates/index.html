@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{name}}!</title>
+    <title>Hi!</title>
     <base href="/index.html">
     <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
     <style>
@@ -160,12 +160,12 @@
       if(location.hash != "#admin") {
         if($.cookie("vote") == "optionA"){
           $(".optionA").prop('disabled', true);
-          $(".optionA").html('optionA <i class="fa fa-check-circle"></i>');
+          $(".optionA").html('<i class="fa fa-check-circle"></i>');
           $(".optionB").css('opacity','0.5');
         }
         if($.cookie("vote") == "optionB"){
           $(".optionB").prop('disabled', true);
-          $(".optionB").html('optionB <i class="fa fa-check-circle"></i>');
+          $(".optionB").html('<i class="fa fa-check-circle"></i>');
           $(".optionA").css('opacity','0.5');
         }
       }
